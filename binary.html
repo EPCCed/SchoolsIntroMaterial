@@ -26,8 +26,8 @@
 			<div class="slides">
                                 <section>
 				<section id="intro">
-                                  <h2>What is a Computer?</h2>
-                                  <img data-src="images/ancient.jpg" alt="Antikythera Mechanism (Analog device for calculating astronomical positions circa 100BC)" height="50%" width="50%">
+                                  <h2>Binary, Data and Images</h2>
+                                  <img data-src="images/Binary_Back.jpg" alt="Binary Image" height="50%" width="50%">
                                   <table>
   <tr>
     <td> <img data-src="images/epsrc.png" style="background:none; border:none; box-shadow:none;"  height="80" alt="EPSRC Logo"></td>
@@ -40,11 +40,9 @@
                                    <section>
  					<h2>Aims</h2>
 					<ul>
-						<li>Describe what a Computer is</li>
-						<li>Describe the uses of a Computer</li>
-						<li>Identify the impact of Computers on the world</li>
-						<li>Identify the parts of a Computer</li>
-						<li>Recognise Binary and how a computer uses it</li>
+						<li>Describe Binary Numbers</li>
+						<li>Describe how ASCII can be used to store data</li>
+						<li>Describe basic image data format</li>
 					</ul>
                                     </section>
                                     <section>
@@ -61,226 +59,165 @@ Note that this presentation contains images owned by others. Please seek their p
 </p>
                                 </section>
 </section>
-				<section>A Computer
-                                   <section>
-<h2>Your Thoughts</h2>
-<p>In groups, write down what you think a computer is?</p>
+<section>Binary Numbers
+<section><h2>Here there be Dragons</h2>
+<p>A land of wizards and soldiers ruled by a central city has four villages at its compass points. The land exists in the valley of dragons. 
+Every so often the dragons will attempt to raid the villages. To combat this the wizards can transport soldiers but they need to know how many soldiers to send.
+<p>Each village has three signal fires and the wizards are trying to work out how to get the fires to signal more that three dragons are approaching.
+</section>
+<section>
+ <img data-src="images/village.png" alt="Creative Commons License Image" style="background:none; border:none; box-shadow:none; " height="70%" width="70%"/>
+<p>Do you have an idea?
+</section>
+<section><h2>Lets Try Binary</h2>
+<p> If we use binary, we can indicate up to seven dragons approaching.
+<table>
+  <tr>
+    <td>0</td><td>000</td><td>4</td><td>100</td>
+</tr>
+<tr>
+    <td>1</td><td>001</td><td>5</td><td>101</td>
+</tr>
+<tr>
+    <td>2</td><td>010</td><td>6</td><td>110</td>
+</tr>
+<tr>
+    <td>3</td><td>011</td><td>7</td><td>111</td>
 
+  </tr>
+</table>
 </section>
- <section>
-<h2>Definitions</h2>
+<section><h2>A Different Base</h2>
+<p>We normally count in base 10. This means each column in a number is a power of 10.
+<p>The number 125 breaks down like this:
+<table>
+  <tr>
+    <td>Hundreds <script type="math/tex; mode=display">(10^2)</script></td><td>Tens<script type="math/tex; mode=display">(10^1)</script></td><td>Units<script type="math/tex; mode=display">(10^0)</script></td>
+</tr>
+<tr>
+    <td align="center">1</td><td align="center">2</td><td align="center">5</td>
+</tr>
+</table>
+</section>
+<section><h2>A Different Base</h2>
+<p>Numbers in computers are stored and represented in binary. This uses base 2.
+This means each column in a number is a power of 2.
+<p>The number 12 is written as 1100 and breaks down like this:
+<table>
+  <tr>
+    <td>Eights <script type="math/tex; mode=display">(2^3)</script></td><td>Fours<script type="math/tex; mode=display">(2^2)</script></td><td>Twos<script type="math/tex; mode=display">(2^1)</script></td> <td>Units <script type="math/tex; mode=display">(2^0)</script></td>
+</tr>
+<tr>
+    <td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">0</td>
+</tr>
+</table>
+</section>
+<section><h2>Examples</h2>
+<table>
+  <tr>
+    <td>65</td><td>1000001</td><td>32</td><td>100000</td>
+</tr>
+<tr>
+    <td>9</td><td>1001</td><td>14</td><td>1110</td>
+</tr>
+</table>
+<p>Now you choose a number and try to write it in binary.
+<p>For numbers like this the maximum value is <script type="math/tex; mode=display">(2^n)-1</script> where n is the number of bits.
+</section>
+<section><h2>Negative Numbers</h2>
+<p>We have to deal with negative numbers.
+<p>We don't have a negative sign in the same way we do when writing a number done normally.
+<p>One way we could do it is to make the first bit 1 for negative numbers and 0 for positive numbers.
+<p>This has problems - we get two zeros and it reduces the range of numbers we can represent.
+</section>
+<section><h2>Negative Numbers</h2>
+<p>We use what is called two's complement.
+<p>This is a method for representing postive and negative numbers but has no issue with the zero.
+<p>We do need to know the number of bits in a number representation. So for four bits we can do the following:
+<table>
+  <tr>
+    <td>4</td><td>0100</td><td>0</td><td>0000</td>
+</tr>
+<tr>
+    <td>-4</td><td>1100</td><td>-1</td><td>1111</td>
+</tr>
+</table>
+</section>
+<section><h2>Two's Complement</h2>
 <ul>
-<li><b>Oxford Dictionary:</b> An electronic device which is capable of receiving information (data) in a particular form and of performing a sequence of operations in accordance with a predetermined but variable set of procedural instructions (program) to produce a result in the form of information or signals.</li>
-<li><b>Free Online Dictionary of Computing:</b>  A machine that can be programmed to manipulate symbols. Computers can perform complex and repetitive procedures quickly, precisely and reliably and can quickly store and retrieve large amounts of data.</li>
+  <li>Choose a number</li>
+  <li>Convert the number to binary ignoring the sign. So 5 = 0101.
+  <li>Postive numbers, finish here.
+  <li>Negative numbers - change all the 1s to 0 and the 0s to 1 (this is the complement)
+  <li>Add one to the complement.
 </ul>
+<p>This introduces a range that can be represented by n bits.
+<p>Lowest value is <script type="math/tex; mode=display">-(2^{(n-1)})</script> and Highest value is <script type="math/tex; mode=display">+(2^{(n-1)})-1</script>
 </section>
-<section>
-<h2>Types</h2>
-<p>What Types of Computer are there?</p>
-<p>How to Classify Computers?
+</section>
+<section>Storing Data
+<section><h2>How do letters fit in?</h2>
+Now numbers can be represented in binary - how do we represent letters?</section>
+<section><h2>Using Numbers to represent numbers</h2>
+<p>We can use numbers to represent letters and other symbols in text.
+<p>There are many ways to do this - we will look at a standard called 7-bit ASCII.
+<p>This was one of the first main encodings for text.
+<p>There are 128 entries in 7-bit ASCII - these are used for characters, spaces and symbols.
+</section>
+<section><h2>A Text Example</h2>
+<table>
+<tr>
+<td>Words</td><td>1010111 1101111 1110010 1100100 1110011</td>
+</tr>
+<tr>
+<td>in</td><td>1101001 1101110</td>
+</tr>
+<tr>
+<td>ASCII</td><td>1000001 1010011 1000011 1001001 1001001</td>
+</tr>
+<tr>
+<td>code</td><td>1100011 1101111 1100100 1100101</td>
+</tr>
+</table> 
+<p>Write the ASCII for this word: Dragon
+</section>
+<section><h2>Common File Formats</h2>
 <ul>
-<span class="fragment"><li>Size</li></span>
-<span class="fragment"><li>Function</li></span>
-<span class="fragment"><li>Use</li></span>
+<li>HTML - Webpages which are text in ASCII or Unicode.</li>
+<li>Comma Seperated Values - textual data seperated by commas.</li>
+<li>PDF - A document format.</li>
 </ul>
 </section>
-<section>
-<h2>Size</h2>
-<div class="ulist">
-        <img data-src="images/arrow.png" style="background:none; border:none; box-shadow:none; float: left;" alt="Growing Arrow" width="25%">
-        <ul style="width: 60%;">
-<span class="fragment"><li>Mobile</li></span>
-<span class="fragment">      <ul>
-         <li>Mobile Phone</li>
-         <li>Tablet</li>
-         <li>Laptop</li>
-      </ul></span>
-<span class="fragment"><li>Embedded</li></span>
-<span class="fragment"><li>Microcomputer</li></span>
-<span class="fragment">       <ul>
-         <li>Desktop</li>
-      </ul></span>
-<span class="fragment"><li>Minicomputer</li></span>
-<span class="fragment">      <ul>
-         <li>Workstation</li>
-         <li>Server</li>
-      </ul></span>
-<span class="fragment"><li>Mainframe</li></span>
-<span class="fragment"><li>Supercomputer</li></span>
-</ul>
+<section><h2>Images: How can we use binary here?</h2>
+<p>How can we use binary to represent images?
+<p>There are a lot of ways.
+<p>Images are made up of pixels in a computer - each pixel needs to have a colour assigned to it.
+<p>Images are an X by Y grid of pixels at the basic level.
+</section>
+<section><h2>Colours</h2>
+<p>A colour palette - a set of colours with an identifying number which can be each pixel in an image.
+<p>Colour Encoding - each pixel is encoded with a colour scheme such as RGB or CMYK 
+</section>
+<section><h2>Bitmaps</h2>
+<p>One of the most basic image formats is the bitmap.
+<p>In a bitmap each pixel is represent by a bit pattern which represents a colour.
+<p>Bitmaps are generally 8, 16, 24 or 32bit.
+<p>Each pixel is represented by a number of bits - so in an 8bit bitmap each pixel has 8bits to determine its colour. 
 </section>
 <section>
-<h2>Sizes</h2>
-<p>You can lose a phone down a drain if you dropped it</p>
-<p>You can throw a laptop if you wanted to</p>
-<p>You can lift a workstation if you need to</p>
-<p>You can tilt a minicomputer if you need to</p>
-<p>You cannot move a mainframe, even if you tried</p>
+<img data-src="images/bitmap.png" alt="Creative Commons License Image" style="background:none; border:none; box-shadow:none; " height="60%" width="60%"/>
 </section>
-<section>
-<h2>Function</h2>
-<p>Computers can be grouped by their intended function.</p>
-<ul>
-  <li>Server</li>
-  <li>Workstation</li>
-  <li>Personal Computing Devices</li>
-  <li>Embedded</li>
-</ul>
+<section><h2>Bitmaps</h2>
+<p>8 bits means that a pixel can have one of 256 colours - which likely be indexed in a encoding table.
+<p>In a 24bit bitmap - each pixel has 3 8bit numbers - each of which define the Red Green and Blue components of the pixel.
+<p>This means the pixel can be one of more the 16 million colours.
+<p>These are generally stored as Blue, Green then Red.
 </section>
 </section>
-<section>Uses of a Computer
-                                   <section>
-<p> What do you use a computer for? At home, school, other places?<p>
-<p> What does your family use a computer for?</p>
-<p> What else could a computer be used for?</p>
+<section>Next Time
+<h2>Colour By Numbers</h2>
+<p>Try out using binary numbers to colour in the sheets</p>
 </section>
- <section>
-<h2>Home and Office Uses</h2>
-<ul>
-<li>Games</li>
-<li>Office Work (Spreadsheets, Word Processing, Databases)</li>
-<li>Communication</li>
-<li>Information</li>
-</ul>
-</section>
- <section>
-<h2>World Uses</h2>
-<ul>
-<li>Engineering Design and Automation</li>
-<li>Office Work (Spreadsheets, Word Processing, Databases)</li>
-<li>Communication Systems</li>
-<li>Medicine</li>
-<li>Science Research</li>
-<li>Infrastructure (Transport, Power, Water)</li>
-</ul>
-</section>
-<section>
-<h2>Who uses them?</h2>
-<ul>
-<span class="fragment"><li>Scientists</li></span>
-<span class="fragment"><li>Engineers</li></span>
-<span class="fragment"><li>Doctors</li></span>
-<span class="fragment"><li>Artists</li></span>
-<span class="fragment"><li>Musicians</li></span>
-<span class="fragment"><li>Teachers</li></span>
-<span class="fragment"><li>Students</li></span>
-<span class="fragment"><li>Almost everyone (including you)</li></span>
-</ul>
-</section>
-<section>
-<h2>What does it mean for us?</h2>
-<p>Computers are now a part of daily life.</p>
-<p>Modern science, engineering and medicine are dependent on computers for progress and operation.</p>
-<p>Modern Communications rely on computers in many forms.</p>
-<p>Increased availability of news and culture around the world.</p>
-<p>Important that we understand the capabilities and limitations of computers</p>
-</section>
-<section>
-<h2>Important</h2>
-<p>Computers are tools.</p>
-<p>People have to use them sensibly.</p>
-<p>Don't use them for tasks they are not suitable for.</p>
-</section>
-</section>
-<section>
-<h2>A Task for Next Time</h2>
-<ul>
-<li>Write all the computers that you can identify.</li>
-<li>Put these computers into categories (size, function, use)</li>
-<li>Think about why you put them into a category</li>
-</ul>
-<p>
-<p>
-</section>
-<section>Parts of a Computer
-                                   <section>
-<h2>Two Sides</h2>
-A Computer is composed of two types of component:
-v<ul>
-<li>Hardware: physical parts of the computer</li>
-<li>Software: programs which do work on the hardware</li>
-</ul>
-</section>
-<section>
-<h2>Hardware</h2>
-<p>
-These are the main components of a standard computer:
-<ul>
-<li>Processor</li>
-<li>RAM: Random Access Memory</li>
-<li>Storage (Hard Disk)</li>
-<li>Graphics</li>
-<li>Network Interface</li>
-<li>Removable Storage</li>
-</ul>
-</p>
-</section>
-<section>
-<h2>Peripherals</h2>
-<p>
-To use the computer you will often use the following peripherals:
-<ul>
-<li>Monitor</li>
-<li>Keyboard</li>
-<li>Mouse</li>
-</ul>
-</p>
-</section>
- <section>
-<h2>Processor</h2>
-<p>The Processor is the central part of the computer; without this the rest of the computer cannot function.
-<p>Another name for the processor is the Central Processing Unit (CPU).
-<p>The Processor is what carries out the calculations and operations which allow a computer to process data - this is what allows a computer to do what it needs to support the user.
-</section>
-<section>
-<h2>Processor</h2>
-<p>
-The Processor contains many parts but these are the key units:
-<ul>
-<li>Control Unit: Manages the operations in the CPU - data transfer, instruction direction.</li>
-<li>Arithmetic Logic Unit: Does the basic arithmetic, comparison and logic operations. </li>
-<li>Memory Management Unit: Manages how the CPU talks to RAM and other forms of working memory.</li>
-</ul>
-</p>
-<p> Modern Processors are often termed multi-core - this means there is more that one processor on the same bit of hardware.
-</section>
-<section>
-Memory
-</section>
-<section>
-Storage
-</section>
-<section>
-Other Hardware
-</section>
-<section>
-Software
-</section>
-<section>
-Operating System
-</section>
-<section>
-Applications
-</section>
-</section>
-                    <section>Information in a Computer
-                                   <section>
-Computers don't have ten fingers
-</section>
- <section>
-Counting in a different base
-</section>
-<section>
-Negative Numbers
-</section>
-<section>
-Storing data
-</section>
-<section>
-But what about text?
-</section>
-</section>
-
 			</div>
 		</div>
 
