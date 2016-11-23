@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="343" width="271" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<style>
+ .path1{stroke:#000000;stroke-linecap:butt;stroke-width:1.781;fill:none;stroke-linejoin:miter}
+ .cl1{fill:#000000;}
+ .cl2{stroke-linejoin:round;stroke-width:0.625;fill-rule:evenodd;}
+ .cl3{overflow:visible;}
+ .cl4{font-size:14px;font-family:Liberation Sans;fill:#000000;letter-spacing:0px;line-height:125%;word-spacing:0px;}
+</style>
+ <defs>
+  <marker id="Arrow2Mstart" refY="0" refX="0" class="cl3" orient="auto">
+   <path class="cl2" transform="scale(.6)" d="M 8.718,4.033 -2.207,0.016 8.718,-4.001 c -1.745,2.372 -1.735,5.617 -6e-7,8.035 z"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" class="cl3" orient="auto">
+   <path class="cl2" transform="scale(-.6)" d="M 8.718,4.033 -2.207,0.016 8.718,-4.001 c -1.745,2.372 -1.735,5.617 -6e-7,8.035 z"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-2.7 -30.4)">
+  <rect style="stroke:#000000;stroke-width:1.560;fill:none" transform="matrix(.807 -.590 .807 .590 0 0)" height="71.3" width="71.3" y="199" x="-88.2"/>
+  <rect style="stroke:#000000;stroke-width:1.781;fill:none" rx="25.4" ry="24.4" height="48.9" width="135" y="299" x="79.6"/>
+  <path style="stroke-linejoin:miter;marker-start:url(#Arrow2Mstart);stroke:#000000;stroke-linecap:butt;stroke-width:1.781;fill:none" d="m 90.284,169.500 -46.816,0 0,155.207 37.656,0"/>
+  <g transform="matrix(.356 0 0 .356 102 306)">
+   <path style="stroke:#000000;stroke-width:4.464;fill:#ffffff" d="m 447.142,194.505 c 0,29.586 -23.984,53.571 -53.571,53.571 -29.586,0 -53.571,-23.984 -53.571,-53.571 0,-29.586 23.984,-53.571 53.571,-53.571 29.586,0 53.571,23.984 53.571,53.571 z" transform="matrix(1.12 0 0 1.12 -22.2 -91.2)"/>
+   <path class="cl1" d="m 447.142,194.505 c 0,29.586 -23.984,53.571 -53.571,53.571 -29.586,0 -53.571,-23.984 -53.571,-53.571 0,-29.586 23.984,-53.571 53.571,-53.571 29.586,0 53.571,23.984 53.571,53.571 z" transform="matrix(.84 0 0 .84 88 -36.7)"/>
+  </g>
+  <path class="cl1" d="m 447.142,194.505 c 0,29.586 -23.984,53.571 -53.571,53.571 -29.586,0 -53.571,-23.984 -53.571,-53.571 0,-29.586 23.984,-53.571 53.571,-53.571 29.586,0 53.571,23.984 53.571,53.571 z" transform="matrix(.299 0 0 .299 29.5 14.6)"/>
+  <path style="stroke-linejoin:miter;marker-end:url(#Arrow2Mend);stroke:#000000;stroke-linecap:butt;stroke-width:1.781;fill:none" d="m 147.261,70.227 0,54.694"/>
+  <path d="m 147.261,210.169 0,86.753" class="path1" style="marker-end:url(#Arrow2Mend)"/>
+  <path d="m 251.598,327.252 0.508,-158.261 -47.325,0" class="path1" style="marker-start:url(#Arrow2Mstart)"/>
+  <text style="font-size:15px;font-family:Liberation Sans;fill:#000000;letter-spacing:0px;line-height:125%;word-spacing:0px" y="47.190" x="8.702"><tspan x="8.702" y="47.190">While (A = TRUE) Do</tspan><tspan x="8.702" y="65.840">    B</tspan><tspan x="8.702" y="84.490">End While</tspan></text>
+  <text class="cl4" y="328.083" x="142.318">B</text>
+  <text class="cl4" y="174.623" x="142.527">A</text>
+  <text class="cl4" y="257.465" x="97.344">TRUE</text>
+  <text class="cl4" y="162.885" x="210.315">FALSE</text>
+ </g>
+</svg>

@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/epcc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                                <section>
+				<section id="intro">
+                                  <h2>Starting Out</h2>
+                                  <img data-src="images/maze.png" alt="Maze Image" height="50%" width="50%" style="background:none; border:none; box-shadow:none;">
+                                  <table>
+  <tr>
+    <td> <img data-src="images/epsrc.png" style="background:none; border:none; box-shadow:none;"  height="80" alt="EPSRC Logo"></td>
+    <td>  <img data-src="images/nerc-logo-115.png" alt="NERC Logo"></td>
+    <td>  <img data-src="images/archer_logo_360.png" height="80"  alt="ARCHER Logo"></td>
+  </tr>
+</table>
+                                </section> 
+				 
+                                   <section>
+ 					<h2>Aims</h2>
+					<ul>
+						<li>Understand Importance of Clarity</li>
+						<li>Sequences and Operations</li>
+						<li>Describe a Program</li>
+					</ul>
+                                    </section>
+                                    <section>
+                                        <h3>Reuse</h3>
+ <img data-src="images/creativecommons.png" alt="Creative Commons License Image">
+                               
+<p style="font-size:14px">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US</a>
+<p style="font-size:14px">
+This means you are free to copy and redistribute the material and adapt and build on the material under the following terms: You must give appropriate credit, provide a link to the license and indicate if changes were made. If you adapt or build on the material you must distribute your work under the same license as the original.
+</p>
+<p style="font-size:14px">
+Note that this presentation contains images owned by others. Please seek their permission before reusing these images.
+</p>
+                                </section>
+</section>
+<section>
+   <section>
+     <h2> A Cup of Tea </h2>
+     <p>Write down the instructions for making a cup of tea</p>
+        <img data-src="images/tea.jpeg" alt="Tea Image" height="50%" width="50%" style="background:none; border:none; box-shadow:none;">
+                               
+   </section>
+   <section>
+    <h2>Making a cup of tea</h2>
+<div style="float: left;">
+    <ul>
+        <li>milk</li>
+        <li>tea bag</li>
+	<li>sugar</li>
+	<li>water</li>
+	<li>cup</li>
+	<li>kettle</li>
+    </ul>
+</div>
+<div style="float: right;">
+<ol>
+<li> get the kettle</li>
+<li> put some water in it and switch in on</li>
+<li> put the tea bag in the cup </li>
+<li> pour the water in the cup</li>
+<li> pour some milk</li>
+<li> add some sugar</li>
+<li> take the tea bag out</li>
+<li> stir </li>
+</ol>      
+</div>
+   </section>
+   <section>
+      <h2>Why?</h2>
+      <p>There are a set of steps to follow for making a cup of tea.
+      <p>A recipe - in computing, science and maths recipe isn't the word used.
+      <p>The term algorithm is used.
+   </section>
+<section>
+      <h2>Algorithm</h2>
+      <p>An alogrithm is a set of steps to follow to accomplish a task.
+      <p>These form the basis of a program for a computer.
+      <p>Often written in pseudo-code.
+   </section>
+   <section>
+      <h2>Reading an Algorithm</h2>
+      <p>Look at the instructions of another person.
+      <p>How similar are the sets of instructions?
+      <p>Can you understand them?
+
+      <p><b>Important</b> - there can be multiple approaches to a problem.
+   </section>
+</section>
+<section>
+  <section>
+   <h2>A New Problem - Navigation</h2>
+   <img data-src="images/pathfind.png" alt="Path Image" height="50%" width="50%" style="background:none; border:none; box-shadow:none; ">
+
+  </section>
+  <section>
+  <h2>A New Problem - Navigation</h2>
+  <span class="fragment"><p>On the worksheets there is a straight line corridor to move your person down.</p></span>
+  <span class="fragment"><p>Write down a set of instructions to move your person down the corridor.</p></span>
+  <span class="fragment"><p>Note that the pit is bottomless and if the person lands on it they fall forever.</p></span>
+  <span class="fragment"><p>Now get another person to try your instructions. </p></span>  
+   </section>
+   <section>
+   <h2>Problems</h2>
+   <p>Were there any problems?
+   <ul>
+   <span class="fragment"><li>Language</li></span>
+   <span class="fragment"><li>Actions</li></span>
+   <span class="fragment"><li>Knowledge</li></span>
+   <span class="fragment"><li>Timing</li></span>
+   </ul>
+   </section>
+</section>
+<section>
+  <section>
+  <h2>Pseudo-Code</h2>
+  <p>The steps of a program are written in a more accessible language (like English).</p>
+  <p>It is used to detail how a program or part of a program should operate.</p>
+  <p>Often used in design and preparation.</p>
+  </section>
+  <section>
+  <h2>Pseudo-Code</h2>
+  <p>There is no standard for pseudo-code.</p>
+  <p>It may not replicate all aspects of actual code.</p>
+  <p>It is for people not computers.</p>
+  </section>
+  <section>
+  <h2>A Quote</h2>
+  <p><i>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."</i></p>
+  <p>Attributed to Martin Fowler - a respected British software engineer.</p>
+  <p>Write programs so that other people can understand them.</p>
+  </section>
+  <section>
+   <h2>Actions</h2>
+   <p>To make the navigation easier - lets create a set of standard steps called actions.</p>
+   <p>What actions should we have?</p>
+  </section>
+<section>
+   <h2>Actions</h2>
+   <p>Some sample actions</p>
+   <ul>
+     <li>Walk 1 Space</li>
+     <li>Run 2 Spaces</li>
+     <li>Jump Over 1 Space</li>
+   </ul>
+   <p>Rewrite your instructions using these actions.</p>
+ </section>
+</section>
+<section>
+ <section>
+  <h2>A Working Set?</h2>
+  <p>You now have a working set of instructions.</p>
+  <p>Will they always work?</p>
+  <p>What happens if the position of the pit changes?</p>
+ </section>
+<section>
+  <h2>Changing Circumstances</h2>
+  <p>Up to now your person follows your instructions.</p>
+  <p>You have complete knowledge of what will happen and the layout of the corridor.</p>
+  <p>This rarely happens.</p>
+  <p>We often have to make choices.</p>
+</section>
+  <section>
+  <h2>Choices</h2>
+     <img data-src="images/choice.png" alt="Path Image" height="50%" width="50%" style="background:none; border:none; box-shadow:none; ">
+
+  </section>
+  <section>
+  <h2>Choices</h2>
+  <p>The simplest choice can be written as:</p>
+  <p><b>IF</b> condition <b>THEN</b> do this <b> ELSE </b> do this other thing</p> 
+  <p>Examples:</p>
+  <p><b>IF</b> it is raining <b>THEN</b> put up umbrella </p>
+  <p><b>IF</b> cup of tea is too hot <b>THEN</b> let it cool <b>ELSE</b> drink the tea </p>
+  </section>
+  <section>
+  <h2>Choices and Knowledge</h2>
+  <p>To make a choice we need to evaluate something we can observe or know about.</p>
+  <p>What could we add as actions to the person for our instructions?</p>
+  </section>
+  <section>
+   <h2>New Actions</h2>
+   <ul>
+     <li>Look Ahead 1 Space - Gives information (Is there a pit or solid ground?)</li>
+     <li>Determine Next Action (IF THEN)</li>
+   </ul>
+   <p>Rewrite your instructions using these actions.</p>
+   <p>Try making up new corridors with different pit locations.</p>
+ </section>
+</section>
+<section>
+ <section>
+  <h2>Different Lengths</h2>
+  <p>What happens if the length of the corridor changes?</p>
+ </section>
+ <section>
+  <h2>Continuation</h2>
+  <p>Sometimes we have to keep going until a problem is done.</p>
+  <p>Maybe we don't know the length of the problem or it may change.</p>
+  <p>So we have to repeat actions.</p>
+ </section>
+ <section>
+    <h2>Loops</h2>
+        <img data-src="images/doloop.png" alt="Path Image" height="30%" width="30%" style="background:none; border:none; box-shadow:none; ">
+ </section>
+ <section>
+    <h2>Loops</h2>
+    <p>Loops allow us to repeat a set of actions until we reach a goal.</p>
+    <p>This means we can check a condition like a choice.</p>
+    <p>There are different types of loop.</p>
+ </section>
+ <section>
+    <h2>Loops - Pseudo-Code</h2>
+    <p>Writing a loop in pseudo-code:</p>
+     <ul>
+      <li>WHILE condition is met:</li>
+      <ul>
+         <li>Actions</li>
+      </ul>
+    </ul>
+    <p>Example:</p>
+    <ul>
+      <li>WHILE kettle is not boiled:</li>
+      <ul>
+         <li>Wait and Twiddle Thumbs for 5 seconds</li>
+      </ul>
+    </ul>
+ </section>
+ <section>
+    <h2>Adding Loops In</h2>
+    <p>We could surround other actions with the loop making it the "main" entry to the steps.</p>
+    <p>So we could make this an action - Find Exit.
+    <p>Try adding a loop to your instructions - and try changing the length of the corridor</p>
+ </section>
+</section>
+<section>
+<section>
+<h2>A More Complicated Version</h2>
+<p>So far, we have looked at straight lines, lets put in some corners.</p>
+<p>The second corridor has two corners in it.</p>
+<p>Can you write a set of instructions using the actions for this one?</p>
+</section>
+<section>
+<h2>A More Complicated Version</h2>
+<p>What new actions will we need?</p>
+</section>
+<section>
+<h2>New Actions</h2>
+<p>We will need to add or update actions:</p>
+<ul>
+     <li>Look Ahead 1 Space - Gives information (Add new response - wall)</li>
+     <li>Determine Next Action (what happens if there is a wall?)</li>
+     <li>Turn Left 90</li>
+     <li>Turn Right 90</li>
+   </ul>
+</section>
+<section>
+<h2>Can you follow each others instructions?</h2>
+<p>Try using each others instructions to move through the corridor.</p>
+<p>Then try making a new corridor and see if it still works.</p>
+<p>Should we add in anything else?</p>
+</section>
+</section>
+<section>
+<section>
+A Maze
+</section>
+<section>
+New Actions?
+</section>
+<section>
+How would you instructions work in another maze?
+</section>
+<section>
+Memory and Actions
+</section>
+<section>
+How do you write it now?
+</section>
+</section>
+<section>
+<section>
+How about a Dragon chasing you?
+</section>
+<section>
+Writing the dragon
+</section>
+<section>
+Dragon Actions
+</section>
+<section>
+Trying this out
+</section>
+ <section>
+   timing
+  </section>
+  <section>
+   try writing instructions with timings
+ </section>
+<section>
+New Runner Actions
+</section>
+<section>
+Do a chase
+</section>
+</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+                                math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js' },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
