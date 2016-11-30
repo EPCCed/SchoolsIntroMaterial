@@ -260,6 +260,78 @@ Note that this presentation contains images owned by others. Please seek their p
 </section>
 <section>
 <section>
+<h2>Conditions</h2>
+<p>A couple of bits have used the term condition.</p>
+<p>A condition in this case is an expression which can be true or false.</p>
+<p>We can say that these conditions are Boolean.</p>
+</section>
+<section>
+<h2>Conditions</h2>
+<p>Boolean means that it can be used to describe values and operations which evaluate to true (1) or false (0).</p>
+<p>Conditions can be simple or compound.</p>
+</section>
+<section>
+<h2>Simple</h2>
+        <img data-src="images/tiamat.jpg" alt="Path Image" height="40%" width="40%" style="background:none; border:none; box-shadow:none; float: right; ">
+<p>A simple condition is one which is either true or false and requires no other information.</p>
+<p>Examples:</p>
+<ul>
+<li><i>it is raining</i></li>
+<li><i>the dragon has 5 heads</i></li>
+</ul>
+</section>
+<section>
+<h2>Compound</h2>
+<p>Sometimes it isn't as easy as one thing to check or maybe it has to be one thing and not another.</p>
+<p>For this we have operators which are used to form compound conditions.</p>
+<p>A fancy way of saying we will check more than one thing.</p>
+<p>
+</section>
+<section>
+<h2>Operators</h2>
+<p>To make compound expressions we use operators in different combinations.</p>
+<p>These operators can include:</p>
+<ul>
+<li>AND</li>
+<li>OR</li>
+<li>NOT</li>
+</ul>
+<p>So we can do CONDITION1 AND CONDITION2 as a compound condition.</p>
+</section>
+<section>
+<h2>AND Examples</h2>
+<p>AND - both conditions need to be true for the AND operation to be true.</p>
+<ul>
+<li>Today is Wednesday AND Today is a school day - True</li>
+<li>Dinosaurs are extinct AND A Dinosaur walked down the road today - False</li>
+<li>The moon is made of cheese AND The sun is made of oranges - False</li>
+</ul>
+</section>
+<section>
+<h2>OR Examples</h2>
+<p>OR - Either condition needs to be true for the OR operation to be true.</p>
+<ul>
+<li>Today is Wednesday OR Today is a school day - True</li>
+<li>Dinosaurs are extinct OR A Dinosaur walked down the road today - True</li>
+<li>The moon is made of cheese OR The sun is made of oranges - False</li>
+</ul>
+</section>
+<section>
+<h2>NOT Examples</h2>
+<p>NOT - The condition is reversed - if it is False it becomes True </p>
+<ul>
+<li>NOT (Today is a school day) - False</li>
+<li>NOT (A Dinosaur walked down the road today) - True</li>
+</ul>
+</section>
+<section>
+<h2>Conditions</h2>
+<p>Anything which can be evaluated to true or false can be part of a condition.</p>
+<p>What conditions may be useful to have in our corridor instructions?</p>
+</section>
+</section>
+<section>
+<section>
 <h2>A More Complicated Version</h2>
 <p>So far, we have looked at straight lines, lets put in some corners.</p>
 <p>The second corridor has two corners in it.</p>
@@ -284,6 +356,61 @@ Note that this presentation contains images owned by others. Please seek their p
 <p>Try using each others instructions to move through the corridor.</p>
 <p>Then try making a new corridor and see if it still works.</p>
 <p>Should we add in anything else?</p>
+</section>
+<section>
+<h2>Which Way?</h2>
+<p>Look at the corridor in Sheet Number 3</p>
+<p>This corridor has a T-junction in it.</p>
+<p>This means the person could go left or right.</p>
+<p>What happens if you write your instructions now?</p>
+</section>
+<section>
+<h2>Dead Ends</h2>
+<p>We can write a set of instructions that will cope with this layout but will it always deal with dead ends?</p>
+<p>Are our instructions becoming more and more complicated?</p>
+</section>
+<section>
+<h2>Dead Ends</h2>
+<p>Maybe we need to consider moving backwards? Or should we turn?</p>
+<p>Try out using a backwards move and decide which way would be better?</p>
+</section>
+<section>
+<h2>Refining Actions</h2>
+<p>Maybe we should change some actions to be better or more useful?</p>
+<p>Current Actions:</p>
+<ul>
+     <li>Walk 1 Space</li>
+     <li>Run 2 Spaces</li>
+     <li>Jump Over 1 Space</li>
+     <li>Look Ahead 1 Space - Gives information (slab,pit,wall)</li>
+     <li>Determine Next Action (IF response THEN action)</li>
+     <li>Turn Left 90</li>
+     <li>Turn Right 90</li>
+     <li>Loop (keep going till out)</li>
+</ul>
+</section>
+<section>
+<h2>Refining Actions</h2>
+<p>What to look for:</p>
+<ul>
+  <li>Similar actions, different sizes</li>
+  <li>Similar actions, different direction</li>
+</ul>
+</section>
+<section>
+<h2>Refining Actions</h2>
+<p>Some ideas for change</p>
+<ul>
+  <li>Move <i>N</i> Spaces in <i>Direction</i></li>
+  <li>Turn <i>N</i> Degrees</li>
+  <li>Turn <i>Direction</i></li>
+  <li>Look <i>Direction</i></li>
+</ul>
+<p>Would need to define Direction to have options:<b>Ahead, Left, Right, Back</b>.</p>
+</section>
+<section>
+<h2>Refining Actions</h2>
+<p>Choose a corridor and write instructions using our updated actions.</p>
 </section>
 </section>
 <section>
