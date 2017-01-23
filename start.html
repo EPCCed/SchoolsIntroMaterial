@@ -515,28 +515,63 @@ How would you instructions work in another maze?
 </section>
 <section>
 <section>
-How about a Dragon chasing you?
+<h2>How about a Dragon chasing you?</h2>
+<p>Let's make it a little more interesting - a dragon is in the maze trying to hunt you down.</p>
 </section>
 <section>
-Writing the dragon
+<h2>Writing the dragon</h2>
+<p>What should our dragon do?</p>
+<ul>
+<span class="fragment">Track down your person</span>
+<span class="fragment">Breathe Fire</span>
+<span class="fragment">Eat Person</span>
+</ul>
 </section>
 <section>
-Dragon Actions
+<h2>Dragon Actions</h2>
+<p>How do we turn these into a set of actions?</p>
+<p>We can reuse a lot of the prior actions we used for our person.</p>
+<p>What about new actions?</p>
 </section>
 <section>
-Trying this out
+<p>Tracking - maybe a Sniff action: sniff - which says which direction (up/down/left/right) the person is</p>
+<p>Fire - an action to breathe fire over some squares - firebreath - which puts out fire for 2 squares in front</p>
+<p>Eat Person - an action to eat a person right in front of it - eat</p>
+So using these actions and what you have already try writing a dragon.
+</section>
+<section>
+<h2>Trying this out</h2>
+Now to test our running person and our dragon - in pairs, one of you act as the person, the other as the dragon and see who gets out and who gets eaten.
 </section>
  <section>
-   timing
+  <h2>Problems</h2>
+  <p>There maybe a few problems - did you move at the same time, was one faster than the other or maybe something else?</p>
+  <p>So we need to have some way of making things work together and not get out of step.</p>
   </section>
   <section>
-   try writing instructions with timings
+   <h2>Timing</h2>
+   <p>Lets think about time, when we play a board game or a computer game there are turns or there is some form of clock. These say what we can do when and how much we can do.</p>
+   <p>So lets add a clock to our little dungeon</p>
+   <p>For each "tick" of the clock, the running person and the dragon can each perform an action.</p>
+   <p>This means that each of our players has to do the next action in their instructions on each clock tick.</p>
+ </section>
+ <section>
+   <p>An action is each time we have something to do so an choice may take several clock ticks to get the person or dragon to do something.</p>
+   <p>For this exercise, everyone will perform an action on a clock tick. This is not always the case - maybe an action takes two clock ticks or maybe something blocks an action and you have to wait.</p>
+ </section>
+ <section>
+   <p>But this doesn't solve all our problems - what happens if we try to do actions which conflict with each over.</p>
+   <p>In computers this can cause problems without a way to resolve this - in our dungeon, the way to resolve this is that if a conflict occurs the action of the person gets done before the action of the dragon.</p>
+   <p>This is because the dragon is huge and the person is small and can change quicker.</p>
  </section>
 <section>
-New Runner Actions
+<h2>New Runner Actions</h2>
+<p>Should we add new actions to the runner?</p>
+<p>What could these be?</p>
 </section>
 <section>
-Do a chase
+<h2>Do a Chase</h2>
+<p>Try out comparing how each others dragons and people behave when facing each other.</p>
 </section>
 </section>
 			</div>
