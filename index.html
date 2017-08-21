@@ -1,113 +1,135 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/epcc.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/epcc.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-                                <section>
-				<section id="intro">
-                                  <h2>Supercomputing: An Introductory Course</h2>
-                                  <img data-src="images/archer_cabs_red.jpg" alt="ARCHER Cabinets" height="50%" width="50%">
-                                  <table>
-  <tr>
-    <td> <img data-src="images/epsrc.png" style="background:none; border:none; box-shadow:none;"  height="80" alt="EPSRC Logo"></td>
-    <td>  <img data-src="images/nerc-logo-115.png" alt="NERC Logo"></td>
-    <td>  <img data-src="images/archer_logo_360.png" height="80"  alt="ARCHER Logo"></td>
-  </tr>
-</table>
-                                </section> 
-				 
-                                   <section>
- 					<h2>Topics</h2>
-                                        <div style="float: left;">
-					<ul>
-						<li>What is a Computer?	</li>
- 							<ul>
-								<li><a href="intro.html">An introduction to Computers</a></li>
-								<li><a href="parts.html">Parts of a Computer</a></li>
-								<li><a href="">Build a PC</a></li>
-								<li><a href="binary.html">Data on Computers</a></li>
-							</ul>
-						<li>Science Using Computers</li>
-                                                        <ul>
-                                                                <li><a href="simulation.html">Simulation</a></li>
-                                                                <li><a href="dataanalysis.html">Data Analysis</a></li>
-                                                        </ul>	
-						<li>Supercomputers	</li>
-							<ul>
-								<li>What is a Supercomputer? </li>
-								<li>Uses of Supercomputers	</li>
-							</ul>
-                                          </ul>
-                                          </div>
-                                         <div style="float: right;"><ul>
-						<li>Building a Cluster</li>	
-						<li>Programming</li>
-							<ul>
-								<li><a href="start.html">Starting Out</a></li>
- 							</ul>
-					</ul>
- 					</div>
-                                    </section>
-                                    <section>
-                                        <h3>Reuse</h3>
- <img data-src="images/creativecommons.png" alt="Creative Commons License Image">
-                               
-<p style="font-size:14px">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
-<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US</a>
-<p style="font-size:14px">
-This means you are free to copy and redistribute the material and adapt and build on the material under the following terms: You must give appropriate credit, provide a link to the license and indicate if changes were made. If you adapt or build on the material you must distribute your work under the same license as the original.
-</p>
-<p style="font-size:14px">
-Note that this presentation contains images owned by others. Please seek their permission before reusing these images.
-</p>
-                                </section>
-</section>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section id="intro">
+                    <h2>Computers, Supercomputers, Science</h2>
+                    <img data-src="images/archer_cabs_red.jpg" alt="ARCHER Cabinets" height="50%" width="50%">
+                    <table>
+                        <tr>
+                            <td> <img data-src="images/epsrc.png" style="background:none; border:none; box-shadow:none;" height="80" alt="EPSRC Logo"></td>
+                            <td> <img data-src="images/nerc-logo-115.png" alt="NERC Logo"></td>
+                            <td> <img data-src="images/archer_logo_360.png" height="80" alt="ARCHER Logo"></td>
+                        </tr>
+                    </table>
+                </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-                                math: {
-					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
-					config: 'TeX-AMS_HTML-full'
-				},
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'lib/js/classList.js' },
-					{ src: 'plugin/math/math.js', async: true }
-				]
-			});
-		</script>
-	</body>
+                <section>
+                    <h2>Topics</h2>
+                    <div style="float: left;">
+                        <ul>
+                            <li>What is a Computer?</li>
+                            <ul>
+                                <li><a href="intro.html">Introduction to Computers</a></li>
+                                <li><a href="parts.html">Parts of a Computer</a></li>
+                                <li><a href="build.html">Build a PC</a></li>
+                                <li><a href="binary.html">Data on Computers</a></li>
+                            </ul>
+                        
+                            <li>Science Using Computers</li>
+                            <ul>
+                                <li><a href="simulation.html">Simulation</a></li>
+                                <li><a href="dataanalysis.html">Data Analysis</a></li>
+                            </ul>
+                            
+                        </ul>
+                    </div>
+                    <div style="float: right;">
+                        <ul>
+                            <li>Supercomputers </li>
+                            <ul>
+                                <li>What is a Supercomputer? </li>
+                                <li>Uses of Supercomputers </li>
+                            </ul>
+                            <li>Programming</li>
+                            <ul>
+                                <li><a href="start.html">Starting Out</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h3>Reuse</h3>
+                    <img data-src="images/creativecommons.png" alt="Creative Commons License Image">
+
+                    <p style="font-size:14px">This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US</a>
+                    <p style="font-size:14px">
+                        This means you are free to copy and redistribute the material and adapt and build on the material under the following terms: You must give appropriate credit, provide a link to the license and indicate if changes were made. If you adapt or build on the material you must distribute your work under the same license as the original.
+                    </p>
+                    <p style="font-size:14px">
+                        Note that this presentation contains images owned by others. Please seek their permission before reusing these images.
+                    </p>
+                </section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+            math: {
+                // mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                {
+                    src: 'lib/js/classList.js'
+                },
+                {
+                    src: 'plugin/math/math.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
 </html>
