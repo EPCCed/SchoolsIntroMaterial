@@ -107,7 +107,7 @@ class QuizWindow(Tkinter.Toplevel):
                column=0
                row = row+1
         return row               
-                
+"""                
 def askquestion(number,min,max):
     value = random.randint(min,max)
     print("Question %d:" % number )
@@ -133,6 +133,7 @@ def run_quiz():
         score = score + askquestion(i,min,max)    
     print("You achieved %d out of %d, which is %3.2f%%" % (score,questions,(100.0*float(score)/float(questions))))
 
+"""
 def main():
     root = Tk()
     configwindow = ConfigWindow(root) 
