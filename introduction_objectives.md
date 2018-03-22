@@ -75,16 +75,16 @@ WhatIsComputerSheets.xslx
 
  
 
-The specific sheets related to this lessons are Sheet1 and Sheet2.
+The specific sheets related to this lessons are WhatIsAComputer and IdentifyingComputers.
 
  
 
-Sheet1 - this is a individual/group exercise. It should encourage the students
+WhatIsAComputer - this is a individual/group exercise. It should encourage the students
 to think about how they perceive computers and what they recognise as computers.
 
  
 
-Sheet2 - this is about getting students to look around at their everyday lives
+IdentifyingComputers - this is about getting students to look around at their everyday lives
 and try to see how technology and computers impact upon it. They should be able
 to try to categorise computers they interact with or see others interact with.
 The main aim to get them to give a reason why they put something in a category.
